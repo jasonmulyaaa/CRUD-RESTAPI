@@ -44,7 +44,8 @@ const deleteUser = async(id) => {
                     <td>{user.email}</td>
                     <td>{user.gender}</td>
                     <td>
-                        <Link to={`edit/${user.id}`} className='button is-small is-info'>Edit</Link>
+                        <Link to={`read/${user.id}`} className='button is-small is-info'>Read</Link>
+                        <Link to={`edit/${user.id}`} className='button is-small is-warning'>Edit</Link>
                         <button onClick={() => deleteUser(user.id)} className='button is-small is-danger'>Delete</button>
                     </td>
                 </tr>
